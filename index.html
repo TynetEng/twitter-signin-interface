@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\OLUWATOYIN\Desktop\SQI\HTML\CSS\bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Twitter</title>
+</head>
+<body class="bg-dark">
+
+    <div class="card card-body parent shadow-sm bg-light">
+        <div class="head">
+            <div class=" bird shadow-sm">
+                <i class="fa fa-twitter text-primary"></i>
+            </div>
+            <h5 class="twit text-primary">TWITTER</h5>
+        </div>
+        <div class="team py-4">
+            <div id="email">
+                <span class="px-3">Email</span>
+            </div>
+            <input type="text" id="email2" class="w-100 shadow-sm px-3" onfocus="shiftEmail('email')" onblur="returnEmail('emailR')">
+        </div>
+        <div class="team py-3">
+            <div id="pass">
+                <span class="px-3">Password</span>
+            </div>
+            <input type="password" id="pass2" class="w-100 shadow-sm px-3" onfocus="shiftPassword('pass')" onblur="returnPassword('passR')">
+        </div>
+        <div>
+            <button class="w-100 btn btn-primary" onclick="validate()">LOGIN</button>
+        </div>
+        <div>
+            <p id="result1"></p>
+            <p id="result2"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
